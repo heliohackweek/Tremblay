@@ -35,3 +35,4 @@ __Contents__
   - [Machine-Learning Approach to Identification of Coronal Holes in Solar Disk Images and Synoptic Maps](https://arxiv.org/abs/2006.08529) _by E. Illarionov, A. Kosovichev & A. Tlatov_
 
 - __Unsupervised Machine Learning Methods:__
+  - Principle: Data clustering.
