@@ -23,6 +23,7 @@ __Contents__
   - Inspiration: [New Homogeneous Dataset of Solar EUV Synoptic Maps from SOHO/EIT and SDO/AIA](https://link.springer.com/article/10.1007/s11207-019-1563-y) _by A. Hamada, T. Asikainen & K. Mursula_
 
 - __Step 2:__ Composite Synoptic Maps
+  - Inspiration: [Creating a Full Sun Map with AIA and EUVI](https://docs.sunpy.org/en/stable/generated/gallery/map_transformations/reprojection_aia_euvi_mosaic.html)
 
 ## Segmentation
 
