@@ -1,4 +1,4 @@
-# Unsupervised Segmentation of Polar Coronal Holes (Blah)
+# Unsupervised Segmentation of Polar Coronal Holes
 
 Below are links to relevant resources.
 
