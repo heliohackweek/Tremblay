@@ -25,8 +25,7 @@ _In preparation for the Hackweek..._
   - Inspiration: [Creating a Full Sun Map with AIA and EUVI](https://docs.sunpy.org/en/stable/generated/gallery/map_transformations/reprojection_aia_euvi_mosaic.html)
 
 - [ ] __Step 2:__ Wavelet Enhancement of EUV Images for Improved Contrast
-  - Inspiration: [A Fresh View of the Extreme-Ultraviolet Corona from the Application of a New Image-Processing Technique](https://ui.adsabs.harvard.edu/abs/2008ApJ...674.1201S/abstract) _by G. Stenborg, A. Vourlidas & R.A. Howard_
-  - [ ] SoHO/EIT images
+  - [ ] SoHO/EIT images: [A Fresh View of the Extreme-Ultraviolet Corona from the Application of a New Image-Processing Technique](https://ui.adsabs.harvard.edu/abs/2008ApJ...674.1201S/abstract) _by G. Stenborg, A. Vourlidas & R.A. Howard_
   - [x] [STEREO/EUVI images](http://solar.jhuapl.edu/Data-Products/EUVI-Wavelets.php) _by the Johns Hopkins University Applied Physics Laboratory_
 
 - [x] __Step 3:__ Homogenization of the SoHO/EIT & STEREO/EUVI Datasets
@@ -50,7 +49,11 @@ _In preparation for the Hackweek..._
 
 - __Unsupervised Machine Learning Methods:__
   - Principle: Data clustering.
-  - Suggestion: [W-Net: A Deep Model for Fully Unsupervised Image Segmentation](https://arxiv.org/abs/1711.08506)
+  - Suggestion: [W-Net: A Deep Model for Fully Unsupervised Image Segmentation](https://arxiv.org/abs/1711.08506) _by X. Xia & B. Kulis_
+
+- [ ] __Step 1:__ Write Template for Unsupervised Learning Algorithm
+
+- [ ] __Step 2:__ Experiment with Unsupervised Learning Methods
 
 ## Testing
 
