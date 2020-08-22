@@ -1,3 +1,5 @@
+![SEARCH](https://drive.google.com/file/d/1vJWjnv9F5C5odjEDhb_uO-ibpw6RugN3/view?usp=sharing)
+
 # SEgmentation of polAR Coronal Holes (SEARCH)
 
 Using unsupervised learning to SEARCH for polar coronal holes in synoptic EUV images.
