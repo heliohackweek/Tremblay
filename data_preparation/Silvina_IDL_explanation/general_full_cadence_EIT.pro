@@ -32,7 +32,7 @@ dir_save = "/Users/guidoni/OneDrive\ -\ american.edu/Travel/Helio_hack_week/Wave
 
 ;****
 ;[SEG]:
-;directory to finf fits
+;directory to find fits
 ;****
 ;................................................
 ;Original code:
@@ -245,26 +245,24 @@ for q = 0,nn-1 do begin
       
       ;****
       ;[SEG]:
-      ;smooth boxcar of log image
-      ; Edges are processed because padding is added
-      ; Compute mean over moving box-cars using smooth, subtract center values,
-      ; compute variance using smooth on deviations from mean,
-      ; check where pixel deviation from mean is within variance of box,
-      ; replace those pixels in smoothed image (mean) with orignal values,
-      ; return the resulting partial mean image.
-      ;Replace pixels more than a specified pixels deviant from its neighbors
-      ;Computes the mean and standard deviation of pixels in a box centered at
-      ; each pixel of the image, but excluding the center pixel. If the center
-      ; pixel value exceeds some # of standard deviations from the mean, it is
-      ; replaced by the mean in box. Note option to process pixels on the edges.
-      ; 
+      ;sigma_filter: Replace pixels more than a specified pixels deviant from its neighbors 
       ;RADIUS = alternative to specify box radius, so box_width = 2*radius+1
       ;N_sigma = # standard deviations to define outliers, floating point,
       ;     recommend > 2, default = 3. For gaussian statistics:
       ;     N_sigma = 1 smooths 35% of pixels, 2 = 5%, 3 = 1%.
       ;/ITERATE causes sigma_filter to be applied recursively (max = 20 times)
       ;     until no more pixels change (only allowed when N_sigma >= 2).
+
       
+       
+     
+      ;Replace pixels more than a specified pixels deviant from its neighbors
+      ;Computes the mean and standard deviation of pixels in a box centered at
+      ; each pixel of the image, but excluding the center pixel. If the center
+      ; pixel value exceeds some # of standard deviations from the mean, it is
+      ; replaced by the mean in box. Note option to process pixels on the edges.
+      ; 
+            
       ;imgsize = size(img)
       ;implot = IMAGE(img , IMAGE_DIMENSIONS=[imgsize(1),imgsize(2)], DIMENSIONS=[512,512], MARGIN=0)
       ;use bigger boxcar again only for pixels outside circle chosen by mask
@@ -289,6 +287,14 @@ for q = 0,nn-1 do begin
       ;[SEG]:
       ;create sigma-filtered of log image and smooth it 52 times with boxcar of 30 
       ;supersmooth
+      ;; smooth boxcar of log image
+      ; Edges are processed because padding is added
+      ; Compute mean over moving box-cars using smooth, subtract center values,
+      ; compute variance using smooth on deviations from mean,
+      ; check where pixel deviation from mean is within variance of box,
+      ; replace those pixels in smoothed image (mean) with orignal values,
+      ; return the resulting partial mean image.
+
       ;****
        mr = kconvol(img,30)
        for t=0,50 do mr = kconvol(mr,30)
@@ -298,7 +304,7 @@ for q = 0,nn-1 do begin
        ;create sigma-filtered of log image and convolve with kernel twice       
        img1 = kconvol(img,k,total(k)) 
        img1 = kconvol(img1,k,total(k)) 
-       ;create sigma-filtered of log image and convolve with kernel trice
+       ;create sigma-filtered of log image and convolve with kernel thrice
        l0 = kconvol(img1,k,total(k))
 
        ;****
