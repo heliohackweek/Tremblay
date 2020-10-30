@@ -51,14 +51,18 @@ _In preparation for the Hackweek..._
   - Principle: Data clustering.
   - Suggestion: [W-Net: A Deep Model for Fully Unsupervised Image Segmentation](https://arxiv.org/abs/1711.08506) _by X. Xia & B. Kulis_
 
-- [ ] __Step 1:__ Write Template for Unsupervised Learning Algorithm
+- [x] __Step 1:__ Write Template for Unsupervised Learning Algorithm
+  - [Kmeans & Wnet]
 
-- [ ] __Step 2:__ Experiment with Unsupervised Learning Methods
+- [] __Step 2:__ Experiment with Unsupervised Learning Methods
+  -[x] [Wnet:] in WNet_SEARCH folder
+  -[ ] [Kmeans:] 
+
 
 ## Testing
 
 - [x] __Step 0:__ Generation of a Test Set
   - [Database of Coronal Holes Identified by Hand](https://drive.google.com/drive/folders/1WtUW-a6fZvcFKvPwtAY-wYfHLyi1hrF5?usp=sharing) _courtesy of Sam Wallace_
 
-- [ ] __Step 1:__ Write Test code
-  - Metric:  
+- [x] __Step 1:__ Write Test code
+  - IOU & Similarity are use as standard scores to compare between predictions and the database from Step 0 (WNet_SEARCH/Compare.ipynb)
