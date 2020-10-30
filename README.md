@@ -54,9 +54,9 @@ _In preparation for the Hackweek..._
 - [x] __Step 1:__ Write Template for Unsupervised Learning Algorithm
   - [Kmeans & Wnet]
 
-- [] __Step 2:__ Experiment with Unsupervised Learning Methods
-  -[x] [Wnet:] in WNet_SEARCH folder
-  -[ ] [Kmeans:] 
+- [x] __Step 2:__ Experiment with Unsupervised Learning Methods
+  -[Wnet:] in WNet_SEARCH folder
+  -[Kmeans:] 
 
 
 ## Testing
