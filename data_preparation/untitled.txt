@@ -1,0 +1,28 @@
+import sys
+from astropy.time import Time
+import astropy.units as u
+from astropy.coordinates import SkyCoord
+from astropy.wcs import WCS
+from sunpy.net import Fido
+from sunpy.net import attrs as a
+import glob
+import os
+import argparse
+import time
+
+
+
+
+p = argparse.ArgumentParser(
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
+p.add_argument('-data_path', type=str, default='/home/plasmion/coronal_hole_heliohackweek/data/',
+               help='Download Path')
+p.add_argument('-starttime', type=str, default='2012/05/10 11:06',
+               help='Start date and time in dd/mm/yyyy hhmm')
+p.add_argument('-endtime', type=str, default='2012/06/10 11:06',
+               help='end date and time in dd/mm/yyyy hhmm')
+p.add_argument('-wavelengths', type=int, default=[170,304],
+                help='wavelengths min and max')
+ p.add_argument('-cadence', type=int, default=8,
+                help='sampling time for data')
